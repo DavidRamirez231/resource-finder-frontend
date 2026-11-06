@@ -1,3 +1,4 @@
+import LoginForm from "./components/LoginForm";
 import { useState, useEffect } from 'react';
 import ResourceCard from './components/ResourceCard';
 
@@ -22,6 +23,7 @@ function App() {
     <div>
       <h1>Community Resource Finder</h1>
 
+      <LoginForm />
       <select value={category} onChange={e => setCategory(e.target.value)}>
         <option value="">All</option>
         <option value="food">Food</option>
